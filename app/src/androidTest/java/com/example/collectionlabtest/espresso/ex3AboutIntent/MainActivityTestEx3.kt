@@ -1,4 +1,4 @@
-package com.example.collectionlabtest.ex3
+package com.example.collectionlabtest.espresso.ex3AboutIntent
 
 import android.app.Activity.RESULT_OK
 import android.app.Instrumentation.ActivityResult
@@ -18,7 +18,7 @@ import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import androidx.test.platform.app.InstrumentationRegistry
 import com.example.collectionlabtest.R
-import com.example.collectionlabtest.espresso.ex3.MainActivityEx3
+import com.example.collectionlabtest.espresso.ex3Intent.MainActivityEx3
 import org.hamcrest.Matcher
 import org.hamcrest.Matchers.allOf
 import org.junit.Rule

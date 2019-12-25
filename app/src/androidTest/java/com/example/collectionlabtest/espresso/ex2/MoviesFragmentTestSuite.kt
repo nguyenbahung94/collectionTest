@@ -1,4 +1,4 @@
-package com.example.collectionlabtest.ex2
+package com.example.collectionlabtest.espresso.ex2
 
 import org.junit.runner.RunWith
 import org.junit.runners.Suite

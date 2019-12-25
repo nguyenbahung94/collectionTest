@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.collectionlabtest">
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -23,7 +26,7 @@
         </activity>
         <activity android:name=".espresso.ex1.MainActivityEx1" />
         <activity android:name=".espresso.ex1.SecondActivityEx1" />
-        <activity android:name=".espresso.ex3.MainActivityEx3" />
+        <activity android:name=".espresso.ex3Intent.MainActivityEx3" />
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.example.collectionlabtest.ex1
+package com.example.collectionlabtest.espresso.ex1
 
 import androidx.test.espresso.Espresso
 import androidx.test.espresso.assertion.ViewAssertions.matches
@@ -6,7 +6,6 @@ import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import com.example.collectionlabtest.R
-import com.example.collectionlabtest.espresso.ex1.SecondActivityEx1
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith

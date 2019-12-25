@@ -1,7 +1,5 @@
-package com.example.collectionlabtest.ex1
+package com.example.collectionlabtest.espresso.ex1
 
-import com.example.collectionlabtest.ex1.MainActivityTestEx1
-import com.example.collectionlabtest.ex1.SecondActivityTestEx1
 import org.junit.runner.RunWith
 import org.junit.runners.Suite
 

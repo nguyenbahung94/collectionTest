@@ -1,4 +1,4 @@
-package com.example.collectionlabtest.espresso.ex3
+package com.example.collectionlabtest.espresso.ex3Intent
 
 import android.app.Activity
 import android.content.Intent

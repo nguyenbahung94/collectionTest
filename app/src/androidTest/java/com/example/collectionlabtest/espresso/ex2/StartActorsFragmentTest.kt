@@ -1,4 +1,4 @@
-package com.example.collectionlabtest.ex2
+package com.example.collectionlabtest.espresso.ex2
 
 import android.os.Bundle
 import androidx.fragment.app.testing.launchFragmentInContainer
