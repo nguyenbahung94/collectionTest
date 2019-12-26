@@ -6,8 +6,13 @@ import android.content.Intent
 import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.provider.MediaStore
+import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.action.ViewActions.click
+import androidx.test.espresso.intent.Intents
+import androidx.test.espresso.intent.Intents.intending
 import androidx.test.espresso.intent.matcher.IntentMatchers.hasAction
 import androidx.test.espresso.intent.rule.IntentsTestRule
+import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import com.example.collectionlabtest.R
 import org.hamcrest.Matcher
@@ -29,7 +34,11 @@ class MainActivityEx4Test {
         val expectedIntent: Matcher<Intent> = allOf(
             hasAction(MediaStore.ACTION_IMAGE_CAPTURE)
         )
-        intentding(expectedIntent)/
+        intending(expectedIntent).respondWith(createGalleryPickActivityResultSub())
+
+        //execute and verify
+        onView(withId(R.id.button_launch_camera)).perform(click())
+        Intents.intended(expectedIntent)
     }
 
     private fun createGalleryPickActivityResultSub(): Instrumentation.ActivityResult? {

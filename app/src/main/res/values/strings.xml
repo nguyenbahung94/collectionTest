@@ -16,4 +16,7 @@
     <string name="text_directors">Directors:</string>
     <string name="text_star_actors">Star Actors:</string>
     <string name="text_launch_camera">text_camera</string>
+    <string name="text_enter_name">text enter name</string>
+    <string name="text_ok">text oke</string>
+    <string name="text_launch_dialog">lauch dialog</string>
 </resources>

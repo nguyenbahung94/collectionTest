@@ -27,6 +27,8 @@
         <activity android:name=".espresso.ex1.MainActivityEx1" />
         <activity android:name=".espresso.ex1.SecondActivityEx1" />
         <activity android:name=".espresso.ex3Intent.MainActivityEx3" />
+        <activity android:name=".espresso.ex4cameraintent.MainActivityCameraEx4" />
+        <activity android:name=".espresso.ex5dialog.MainActivityEx5Dialog" />
     </application>
 
 </manifest>

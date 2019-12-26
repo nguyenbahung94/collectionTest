@@ -20,7 +20,7 @@ class MainActivityCameraEx4 : AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main_ex4_camera)
 
         button_launch_camera.setOnClickListener {
             dispatchCameraIntent()
