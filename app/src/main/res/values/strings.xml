@@ -19,4 +19,6 @@
     <string name="text_enter_name">text enter name</string>
     <string name="text_ok">text oke</string>
     <string name="text_launch_dialog">lauch dialog</string>
+    <string name="row_label">Clicked on row</string>
+
 </resources>

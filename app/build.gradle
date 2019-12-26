@@ -63,4 +63,8 @@ dependencies {
     implementation "com.afollestad.material-dialogs:core:$matieral_dialogs_version"
     implementation "com.afollestad.material-dialogs:input:$matieral_dialogs_version"
 
+    // Mockk.io
+    def mockk_version = "1.9.3"
+    androidTestImplementation "io.mockk:mockk-android:$mockk_version"
+
 }

@@ -29,6 +29,7 @@
         <activity android:name=".espresso.ex3Intent.MainActivityEx3" />
         <activity android:name=".espresso.ex4cameraintent.MainActivityCameraEx4" />
         <activity android:name=".espresso.ex5dialog.MainActivityEx5Dialog" />
+        <activity android:name=".espresso.ex6adapter.LongListActivity" />
     </application>
 
 </manifest>
