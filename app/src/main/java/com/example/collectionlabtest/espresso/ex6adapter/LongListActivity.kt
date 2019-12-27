@@ -68,19 +68,19 @@ class LongListActivity : Activity() {
     companion object {
 
         @VisibleForTesting
-        protected val ROW_TEXT = "ROW_TEXT"
+         val ROW_TEXT = "ROW_TEXT"
 
         @VisibleForTesting
-        protected val ROW_ENABLED = "ROW_ENABLED"
+         val ROW_ENABLED = "ROW_ENABLED"
 
         @VisibleForTesting
-        protected val NUMBER_OF_ITEMS = 100
+         val NUMBER_OF_ITEMS = 100
 
         @VisibleForTesting
-        protected val ITEM_TEXT_FORMAT = "item: %d"
+         val ITEM_TEXT_FORMAT = "item: %d"
 
         @VisibleForTesting
-        protected fun makeItem(forRow: Int): Map<String, Any> {
+         fun makeItem(forRow: Int): Map<String, Any> {
             val dataRow = hashMapOf<String, Any>()
             dataRow[ROW_TEXT] = String.format(ITEM_TEXT_FORMAT, forRow)
             dataRow[ROW_ENABLED] = forRow == 1
@@ -88,5 +88,3 @@ class LongListActivity : Activity() {
         }
     }
 }
-/*https://github.com/android/testing-samples/blob/master/ui/espresso/DataAdapterSample/app/src/sharedTest/java/com/example/android/testing/espresso/DataAdapterSample/LongListActivityTest.java
-* */
