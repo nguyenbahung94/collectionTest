@@ -20,5 +20,9 @@
     <string name="text_ok">text oke</string>
     <string name="text_launch_dialog">lauch dialog</string>
     <string name="row_label">Clicked on row</string>
-
+    <string name="hello_fragment">hello fragment</string>
+    <string name="hello_world">Hello Espresso!</string>
+    <string name="change_text">Change text taking some time</string>
+    <string name="type_something">type something…</string>
+    <string name="waiting_msg">Waiting for message…</string>
 </resources>

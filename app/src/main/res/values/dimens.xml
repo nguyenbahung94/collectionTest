@@ -5,4 +5,6 @@
     <dimen name="selection_row_value_margin">12dp</dimen>
     <dimen name="list_item_min_height">56dp</dimen>
     <dimen name="list_item_padding">16dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="header_margin">32dp</dimen>
 </resources>
