@@ -17,7 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".espresso.ex2.view.MainActivity">
+        <activity android:name=".espresso.ex8idlingresource.MainActivityEx8">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,6 +30,7 @@
         <activity android:name=".espresso.ex4cameraintent.MainActivityCameraEx4" />
         <activity android:name=".espresso.ex5dialog.MainActivityEx5Dialog" />
         <activity android:name=".espresso.ex6adapter.LongListActivity" />
+
     </application>
 
 </manifest>
