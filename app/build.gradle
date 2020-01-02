@@ -32,6 +32,11 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
 }
 
 dependencies {
@@ -50,6 +55,9 @@ dependencies {
     androidTestImplementation "androidx.test.espresso:espresso-core:$androidx_test_espresso"
     androidTestImplementation "androidx.test.espresso:espresso-contrib:$androidx_test_espresso"
     androidTestImplementation "androidx.test.espresso:espresso-intents:$androidx_test_espresso"
+    implementation "androidx.test.espresso:espresso-idling-resource:$androidx_test_espresso"
+    implementation 'com.google.android.material:material:1.2.0-alpha03'
+
 
     // androidx.fragment
     def fragment_version = "1.2.0-rc04" // must use for new factory stuff
@@ -66,8 +74,20 @@ dependencies {
     implementation "com.afollestad.material-dialogs:core:$matieral_dialogs_version"
     implementation "com.afollestad.material-dialogs:input:$matieral_dialogs_version"
 
-    // Mockk.io
-    def mockk_version = "1.9.3"
-    androidTestImplementation "io.mockk:mockk-android:$mockk_version"
+    // Mockito
+    testImplementation 'org.mockito:mockito-all:2.0.2-beta'
+
+    def robolectricVersion = "4.3.1"
+    androidTestImplementation 'org.robolectric:annotations:' + robolectricVersion
+
+    def truthVersion = "1.0"
+    androidTestImplementation 'com.google.truth:truth:' + truthVersion
+
+    testImplementation "org.robolectric:robolectric:4.2.1"
+
 
 }
+
+/*
+https://github.com/adrianseraspi12
+*/
