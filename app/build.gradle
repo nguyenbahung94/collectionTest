@@ -20,7 +20,7 @@ android {
 
     }
     buildTypes {
-        debug{
+        debug {
         }
         release {
             minifyEnabled false
@@ -92,6 +92,11 @@ dependencies {
 
     // Mockito
     testImplementation 'org.mockito:mockito-all:2.0.2-beta'
+    testImplementation 'org.mockito:mockito-core:1.10.19'
+
+
+    testImplementation 'org.assertj:assertj-core:3.6.2'
+
 
     def robolectricVersion = "4.3.1"
     androidTestImplementation 'org.robolectric:annotations:' + robolectricVersion
@@ -101,7 +106,21 @@ dependencies {
 
     testImplementation "org.robolectric:robolectric:4.2.1"
 
+    //Retrofit
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.6.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.6.1'
+    //RxJava2
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.10'
 
+    testImplementation "io.mockk:mockk:1.9"
+    testImplementation "androidx.arch.core:core-testing:2.1.0"
+
+    //implementation "com.google.dagger:dagger:2.24"
+  //  kapt "com.google.dagger:dagger-complier:2.24"
 }
 
 /*
