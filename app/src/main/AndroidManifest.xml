@@ -5,7 +5,8 @@
 
     <uses-feature
         android:name="android.hardware.camera"
-        android:required="true"/>
+        android:required="true" />
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
@@ -17,13 +18,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".espresso.ex6adapter.LongListActivity">
+        <activity
+            android:name=".testing_basic.tasks.TasksActivity"
+            android:theme="@style/AppTheme.OverlapSystemBar"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- <activity android:name=".espresso.ex6adapter.LongListActivity">
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+         </activity>-->
         <activity android:name=".espresso.ex1.MainActivityEx1" />
         <activity android:name=".espresso.ex1.SecondActivityEx1" />
         <activity android:name=".espresso.ex3Intent.MainActivityEx3" />

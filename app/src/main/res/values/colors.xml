@@ -21,4 +21,10 @@
 
     <color name="default_background_color">#EEEEEE</color>
 
+    <color name="colorTextPrimary">#000000</color>
+    <color name="colorGrey">#757575</color>
+
+    <drawable name="touchFeedback">#CFD8DC</drawable>
+    <drawable name="completedTaskBackground">#CCCCCC</drawable>
+
 </resources>
