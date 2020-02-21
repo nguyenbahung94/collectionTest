@@ -152,6 +152,8 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
     implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
 
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutinesVersion"
+
 
     // Other dependencies
     testImplementation "org.hamcrest:hamcrest-all:$hamcrestVersion"

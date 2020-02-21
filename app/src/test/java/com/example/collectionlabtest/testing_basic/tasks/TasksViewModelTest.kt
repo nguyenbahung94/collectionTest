@@ -24,7 +24,7 @@ class TasksViewModelTest {
 
 
     @Test
-    fun addNewTask_setsNewTaskEvent() {
+    fun  addNewTask_setsNewTaskEvent() {
         val taskViewModel = TasksViewModel(ApplicationProvider.getApplicationContext())
 
         // When adding a new task
