@@ -48,6 +48,9 @@ android {
         enabled = true
         enabledForTests = true
     }
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
