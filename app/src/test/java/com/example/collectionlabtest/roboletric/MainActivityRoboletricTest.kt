@@ -1,25 +1,26 @@
 package com.example.collectionlabtest.roboletric
 
+import android.os.Build
 import org.junit.After
-import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.Robolectric.setupActivity
 import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
 
+@Config(sdk = [Build.VERSION_CODES.O_MR1])
 @RunWith(RobolectricTestRunner::class)
 class MainActivityRoboletricTest {
-
+    lateinit var setupActivity: MainActivityRoboletric
     @Before
     public fun setUp() {
-        setupActivity(MainActivityRoboletric::class.java)
+        setupActivity = setupActivity(MainActivityRoboletric::class.java)
 
     }
 
     @Test
-    public fun shouldReturnTrue() {
-        assertEquals(1, 2)
+    private fun shouldHaveATextViewDisplayHelloWord() {
 
     }
 
