@@ -59,6 +59,7 @@ class SharedPreferencesHelperTest {
 
     @Test
     fun sharedPreferencesHelper_SavePersonalInformationFailed_ReturnsFalse() {
+        mockBrokenSharedPreferencesHelper = createBrokenMockSharedPreference()
         // Read personal information from a broken SharedPreferencesHelper
         assertFalse(mockBrokenSharedPreferencesHelper.savePersonalInfo(sharedPreferenceEntry))
     }
