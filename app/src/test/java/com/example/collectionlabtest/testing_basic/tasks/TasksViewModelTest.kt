@@ -1,28 +1,15 @@
 package com.example.collectionlabtest.testing_basic.tasks
 
 import android.os.Build
-import androidx.annotation.VisibleForTesting
-import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.Observer
-import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import org.hamcrest.CoreMatchers.not
-import org.hamcrest.CoreMatchers.nullValue
-import org.junit.Assert.assertThat
-import org.junit.Rule
-import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.annotation.Config
-import java.util.concurrent.CountDownLatch
-import java.util.concurrent.TimeUnit
-import java.util.concurrent.TimeoutException
 
 @RunWith(AndroidJUnit4::class)
 @Config(sdk = [Build.VERSION_CODES.O_MR1])
 class TasksViewModelTest {
 
-    @get:Rule
+    /*@get:Rule
     var instantExecutorRule = InstantTaskExecutorRule()
 
 
@@ -70,5 +57,5 @@ class TasksViewModelTest {
 
         @Suppress("UNCHECKED_CAST")
         return data as T
-    }
+    }*/
 }
